@@ -6,11 +6,11 @@ function App() {
   return (
     <div className="app">
       <Navbar />
-      <Header />
-      <About />
-      <Work />
-      <Skills />
-      <Footer />
+      {/* <Header /> */}
+      {/* <About /> */}
+      {/* <Work /> */}
+      {/* <Skills /> */}
+      {/* <Footer /> */}
     </div>
   );
 }
