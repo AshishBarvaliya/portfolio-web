@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 // import { AppWrap } from "../../wrapper";
 // import { images } from "../../constants";
-import "./Header.scss";
+import "./Hero.scss";
 import React from "react";
 
 const scaleVariants = {
@@ -16,14 +16,14 @@ const scaleVariants = {
   },
 };
 
-const Header: React.FC = () => (
-  <div className="app__header app__flex">
+const Hero: React.FC = () => (
+  <div className="app__hero app__flex">
     <motion.div
       whileInView={{ x: [-100, 0], opacity: [0, 1] }}
       transition={{ duration: 0.5 }}
-      className="app__header-info"
+      className="app__hero-info"
     >
-      <div className="app__header-badge">
+      <div className="app__hero-badge">
         <div className="badge-cmp app__flex">
           <span>👋</span>
           <div style={{ marginLeft: 20 }}>
@@ -42,7 +42,7 @@ const Header: React.FC = () => (
     {/* <motion.div
       variants={scaleVariants}
       whileInView={scaleVariants.whileInView}
-      className="app__header-circles"
+      className="app__hero-circles"
     >
       {[images.flutter, images.redux, images.sass].map((circle, index) => (
         <div className="circle-cmp app__flex" key={`circle-${index}`}>
@@ -53,5 +53,5 @@ const Header: React.FC = () => (
   </div>
 );
 
-export default Header;
-// export default AppWrap(Header, "home");
+export default Hero;
+// export default AppWrap(Hero, "home");
