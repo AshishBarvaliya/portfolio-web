@@ -6,7 +6,6 @@
   align-items: center;
 
   padding: 1rem 2rem;
-  background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -21,8 +20,7 @@
   cursor: pointer;
 
   img {
-    width: 90px;
-    height: 30px;
+    width: 40px;
 
     @media screen and (min-width: 2000px) {
       width: 180px;
@@ -34,7 +32,7 @@
 .app__navbar-links {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
 
   list-style: none;
@@ -60,17 +58,17 @@
       text-decoration-skip-ink: auto;
       position: relative;
       transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-      color: var(--secondary-color);
+      color: var(--blue-color);
       &:hover,
       &:focus,
       &:active {
-        color: var(--secondary-color);
+        color: var(--blue-color);
         outline: 0;
         &:after {
           width: 100%;
         }
         & > * {
-          color: var(--secondary-color) !important;
+          color: var(--blue-color) !important;
           transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
         }
       }
@@ -80,8 +78,8 @@
         width: 0;
         height: 1px;
         position: relative;
-        bottom: 0.37em;
-        background-color: var(--secondary-color);
+        bottom: 0.3em;
+        background-color: var(--blue-color);
         transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
         opacity: 0.5;
       }
@@ -134,8 +132,7 @@
     align-items: flex-end;
     flex-direction: column;
 
-    background: url("../../assets/bgWhite.png");
-    background-color: var(--white-color);
+    background-color: var(--green-color);
     background-size: cover;
     background-repeat: repeat;
 
@@ -145,7 +142,7 @@
     svg {
       width: 35px;
       height: 35px;
-      color: var(--secondary-color);
+      color: var(--black-color);
       margin: 0.5rem 1rem;
     }
 
@@ -165,7 +162,7 @@
         margin: 1rem;
 
         a {
-          color: var(--gray-color);
+          color: var(--black-color);
           text-decoration: none;
           font-size: 1rem;
           text-transform: uppercase;
@@ -174,7 +171,7 @@
           transition: all 0.3s ease-in-out;
 
           &:hover {
-            color: var(--secondary-color);
+            color: var(--blue-color);
           }
         }
       }
