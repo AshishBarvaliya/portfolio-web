@@ -1,0 +1,47 @@
+.app__button {
+  display: block;
+  height: 42px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--black-color);
+  border: 2px solid var(--black-color);
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+}
+
+.app__button span {
+  position: relative;
+  z-index: 1;
+}
+
+.app__button:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--pink-color);
+  transition: all 0.35s;
+}
+
+.app__button:hover {
+  color: #fff;
+}
+
+.app__button:hover:after {
+  width: 100%;
+}
+
+.button_width_md {
+  width: 160px;
+}
+
+.button_width_lg {
+  width: 180px;
+}
