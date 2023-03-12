@@ -1,6 +1,5 @@
 #home {
   position: relative;
-  background: url("../../assets/bgIMG.png");
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
@@ -76,4 +75,15 @@
   display: flex;
   gap: 30px;
   margin-top: 40px;
+}
+
+.app__hero-head-text {
+  font-size: 100px;
+  font-weight: 800;
+  text-align: center;
+  color: var(--black-color);
+
+  @media screen and (max-width: 450px) {
+    font-size: 2rem;
+  }
 }

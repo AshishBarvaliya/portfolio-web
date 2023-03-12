@@ -17,7 +17,7 @@ const Hero: React.FC = () => (
         <div className="app__flex">
           <div>
             <p className="p-text">Hello, My name is</p>
-            <h1 className="head-text">Ashish Baravaliya</h1>
+            <h1 className="app__hero-head-text">Ashish Baravaliya</h1>
           </div>
         </div>
 
@@ -28,7 +28,7 @@ const Hero: React.FC = () => (
       </div>
       <div className="app__hero-button-group">
         <Button label={"Contact"} link={`mailto:${email}`} />
-        <Button label={"Resume"} />
+        <Button label={"Resume"} link={"Resume.pdf"} target="_blank" />
       </div>
     </motion.div>
   </div>
