@@ -8,7 +8,13 @@ import SocialMedia from "../SocialMedia/SocialMedia";
 
 const Navbar: React.FC = () => {
   const [toggle, setToggle] = useState<boolean>(false);
-  const navlinks: string[] = ["home", "about", "projects", "skills", "contact"];
+  const navlinks: string[] = [
+    "home",
+    "experiences",
+    "projects",
+    "skills",
+    "contact",
+  ];
 
   return (
     <>

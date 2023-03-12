@@ -22,7 +22,7 @@ const Hero: React.FC = () => (
             A <AnimatedText />
           </p>
           <p className="app__hero-head-text-small">
-            I'm An experienced front-end developer with over 3 years of work
+            I'm an experienced front-end developer with over 3 years of work
             experience in a multinational corporation in India, currently
             pursuing post-graduation studies in full-stack software development.
             Additionally, working as a senior software developer for freelance
