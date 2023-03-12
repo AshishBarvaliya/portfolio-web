@@ -26,10 +26,8 @@ const Projects: React.FC = () => {
   }, []);
 
   return (
-    <>
-      <h2 className="head-text">
-        My Creative <span>Portfolio</span> Section
-      </h2>
+    <div id="projects" className="app__projects">
+      <h2 className="head-text">Relevant Projects</h2>
 
       <motion.div
         animate={{ y: 0, opacity: 1 }}
@@ -89,7 +87,7 @@ const Projects: React.FC = () => {
           </div>
         ))}
       </motion.div>
-    </>
+    </div>
   );
 };
 
