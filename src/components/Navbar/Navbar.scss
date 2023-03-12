@@ -186,3 +186,12 @@
     display: none;
   }
 }
+
+.app__navbar-left-section {
+  position: fixed;
+  left: 0;
+  top: 70%;
+  height: 100vh;
+  z-index: 5;
+  cursor: pointer;
+}

@@ -1,0 +1,13 @@
+.app__navbar-social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  padding-left: 20px;
+  align-items: center;
+  span {
+    width: 2px;
+    background-color: var(--black-color);
+    height: 400px;
+  }
+}
