@@ -1,0 +1,31 @@
+#container {
+  text-align: center;
+  height: 118px;
+  margin-left: 20px;
+}
+
+#text {
+  display: inline-block;
+}
+
+#cursor {
+  display: inline-block;
+  vertical-align: middle;
+  width: 5px;
+  height: 70px;
+  background-color: var(--pink-color);
+  animation: blink 0.5s step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: var(--pink-color);
+  }
+  100% {
+    background-color: var(--pink-color);
+  }
+}

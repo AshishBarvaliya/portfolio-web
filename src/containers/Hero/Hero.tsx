@@ -3,27 +3,31 @@ import { motion } from "framer-motion";
 import "./Hero.scss";
 import React from "react";
 import Button from "../../components/Button/Button";
+import AnimatedText from "../../components/AnimatedText/AnimatedText";
 
 const email = process.env.REACT_APP_CONTACT_EMAIL;
 
 const Hero: React.FC = () => (
-  <div className="app__hero app__flex">
+  <div id="home" className="app__hero app__flex">
     <motion.div
-      whileInView={{ y: [100, 0], opacity: [0, 1] }}
+      whileInView={{ y: [50, 0], opacity: [0, 1] }}
       transition={{ duration: 0.5 }}
       className="app__hero-info"
     >
       <div className="app__hero-content">
-        <div className="app__flex">
-          <div>
-            <p className="p-text">Hello, My name is</p>
-            <h1 className="app__hero-head-text">Ashish Baravaliya</h1>
-          </div>
-        </div>
-
-        <div className="app__flex">
-          <p className="p-text">Full Stack Developer</p>
-          <p className="p-text">Freelancer</p>
+        <div className="app__hero-text-container">
+          <p className="app__hero-head-text-small">Hello, my name is</p>
+          <h1 className="app__hero-head-text">Ashish Baravaliya,</h1>
+          <p className="app__hero-subhead-text">
+            A <AnimatedText />
+          </p>
+          <p className="app__hero-head-text-small">
+            I'm An experienced front-end developer with over 3 years of work
+            experience in a multinational corporation in India, currently
+            pursuing post-graduation studies in full-stack software development.
+            Additionally, working as a senior software developer for freelance
+            projects on a part-time basis.
+          </p>
         </div>
       </div>
       <div className="app__hero-button-group">

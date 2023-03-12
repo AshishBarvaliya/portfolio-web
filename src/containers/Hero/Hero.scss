@@ -15,18 +15,15 @@
 
 .app__hero {
   flex: 1;
+  display: flex;
   width: 100%;
   height: 100vh;
-  flex-direction: row;
+  flex-direction: column;
 
   padding: 6rem 2rem 0rem;
 
   @media screen and (min-width: 2000px) {
     padding-top: 8rem;
-  }
-
-  @media screen and (max-width: 1200px) {
-    flex-direction: column;
   }
 
   @media screen and (max-width: 450px) {
@@ -53,7 +50,6 @@
 .app__hero-content {
   width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 
@@ -77,13 +73,45 @@
   margin-top: 40px;
 }
 
+.app__hero-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .app__hero-head-text {
   font-size: 100px;
   font-weight: 800;
-  text-align: center;
+  width: 100%;
   color: var(--black-color);
+  text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1),
+    10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
+  @media screen and (max-width: 450px) {
+    font-size: 2rem;
+  }
+}
+
+.app__hero-subhead-text {
+  font-size: 70px;
+  font-weight: 800;
+  display: flex;
+  color: var(--black-color);
+  opacity: 0.6;
 
   @media screen and (max-width: 450px) {
     font-size: 2rem;
   }
+}
+
+.app__hero-head-text-small {
+  color: var(--secondary-color);
+  font-size: 26px;
+  font-size: 1rem;
+  font-weight: 500;
+  -webkit-text-stroke: 1px;
+  width: 800px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  opacity: 0.8;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serifz;
 }

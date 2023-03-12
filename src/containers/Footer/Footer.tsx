@@ -20,12 +20,12 @@ const Footer: React.FC = () => {
             Get In Touch
           </h2>
           <div className="app_footer-content">
-            <text>
+            <p>
               If you're in search of an outstanding full-stack developer with
               remarkable front-end expertise, an unyielding problem-solving
               mindset, and a collaborative spirit, then I am your ideal
               candidate. You can count on me to be available at all times.
-            </text>
+            </p>
             <div className="app_footer-button-wrapper">
               <Button label="Say Hello" link={`mailto:${email}`} width="lg" />
             </div>
