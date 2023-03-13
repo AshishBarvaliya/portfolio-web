@@ -1,5 +1,5 @@
 import { Navbar } from "./components";
-import { Hero, Footer, Projects, Skills } from "./containers";
+import { Hero, Footer, Projects } from "./containers";
 import "./App.scss";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
       <Navbar />
       <Hero />
       <Projects />
-      <Skills />
+      {/* <Skills /> */}
       <Footer />
     </div>
   );

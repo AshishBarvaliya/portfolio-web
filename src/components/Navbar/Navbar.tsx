@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
     "home",
     "experiences",
     "projects",
-    "skills",
+    // "skills",
     "contact",
   ];
 
