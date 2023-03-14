@@ -33,6 +33,18 @@ const Hero: React.FC = () => (
       <div className="app__hero-button-group">
         <Button label={"Contact"} link={`mailto:${email}`} />
         <Button label={"Resume"} link={"Resume.pdf"} target="_blank" />
+        <Button
+          label={"Github"}
+          link={"https://github.com/AshishBarvaliya"}
+          target="_blank"
+          showMobileOnly
+        />
+        <Button
+          label={"Linkedin"}
+          link={"https://www.linkedin.com/in/ashishbarvaliya"}
+          target="_blank"
+          showMobileOnly
+        />
       </div>
     </motion.div>
   </div>

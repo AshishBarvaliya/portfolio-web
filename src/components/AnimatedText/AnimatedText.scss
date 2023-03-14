@@ -2,6 +2,18 @@
   text-align: center;
   height: 118px;
   margin-left: 20px;
+
+  @media screen and (max-width: 1024px) {
+    height: 98px;
+  }
+  @media screen and (max-width: 768px) {
+    height: 82px;
+    margin-left: 12px;
+  }
+  @media screen and (max-width: 450px) {
+    height: 62px;
+    margin-left: 8px;
+  }
 }
 
 #text {
@@ -15,6 +27,15 @@
   height: 70px;
   background-color: var(--pink-color);
   animation: blink 0.5s step-end infinite;
+  @media screen and (max-width: 1024px) {
+    height: 50px;
+  }
+  @media screen and (max-width: 768px) {
+    height: 40px;
+  }
+  @media screen and (max-width: 450px) {
+    height: 25px;
+  }
 }
 
 @keyframes blink {
