@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
 
-import { images } from "../../constants";
 import "./Navbar.scss";
 import SocialMedia from "../SocialMedia/SocialMedia";
 
@@ -20,7 +19,7 @@ const Navbar: React.FC = () => {
     <>
       <nav className="app__navbar">
         <div className="app__navbar-logo">
-          <img src={images.logo} alt="logo" />
+          <img src={"logo-nav.png"} alt="logo" />
         </div>
         <ul className="app__navbar-links">
           {navlinks.map((item: string) => (
