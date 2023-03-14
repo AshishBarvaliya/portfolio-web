@@ -19,6 +19,7 @@ const AnimatedText: React.FC = () => {
     function Type() {
       let text = content[part].substring(0, partIndex + 1);
       element.innerHTML = text;
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       partIndex++;
 
       if (text === content[part]) {
@@ -34,23 +35,26 @@ const AnimatedText: React.FC = () => {
     function Delete() {
       let text = content[part].substring(0, partIndex - 1);
       element.innerHTML = text;
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       partIndex--;
 
       if (text === "") {
         clearInterval(intervalVal);
-
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         if (part === content.length - 1) part = 0;
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         else part++;
-
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         partIndex = 0;
 
         setTimeout(function () {
           cursor.style.display = "inline-block";
+          // eslint-disable-next-line react-hooks/exhaustive-deps
           intervalVal = setInterval(Type, 60);
         }, 200);
       }
     }
-
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     intervalVal = setInterval(Type, 60);
   });
 
