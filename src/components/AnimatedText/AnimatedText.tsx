@@ -17,7 +17,7 @@ const AnimatedText: React.FC = () => {
     let cursor = document.querySelector("#cursor") as HTMLElement;
 
     function Type() {
-      var text = content[part].substring(0, partIndex + 1);
+      let text = content[part].substring(0, partIndex + 1);
       element.innerHTML = text;
       partIndex++;
 
@@ -32,14 +32,14 @@ const AnimatedText: React.FC = () => {
     }
 
     function Delete() {
-      var text = content[part].substring(0, partIndex - 1);
+      let text = content[part].substring(0, partIndex - 1);
       element.innerHTML = text;
       partIndex--;
 
       if (text === "") {
         clearInterval(intervalVal);
 
-        if (part == content.length - 1) part = 0;
+        if (part === content.length - 1) part = 0;
         else part++;
 
         partIndex = 0;
