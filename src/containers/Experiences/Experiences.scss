@@ -1,15 +1,19 @@
-.app__skills {
+.app__experiences {
   flex: 1;
   width: 100%;
+  min-height: 100vh;
+  padding-top: 80px;
   flex-direction: column;
 }
 
-.app__skills-container {
+.app__experiences-container {
   width: 80%;
-  margin-top: 3rem;
+  margin: 0 auto;
+  margin-top: 2rem;
 
   display: flex;
   flex-direction: row;
+  justify-content: center;
 
   @media screen and (max-width: 900px) {
     width: 100%;
@@ -17,141 +21,84 @@
   }
 }
 
-.app__skills-list {
-  flex: 1;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
+.app__experiences-timeline {
+  margin: 2em auto;
+  position: relative;
+  max-width: 46em;
 
-  margin-right: 5rem;
-
-  @media screen and (max-width: 900px) {
-    margin-right: 0;
-    justify-content: center;
-    align-items: center;
+  &:before {
+    background-color: var(--black-color);
+    content: "";
+    margin-left: -1px;
+    position: absolute;
+    top: 0;
+    left: 2em;
+    width: 2px;
+    height: 100%;
   }
 }
 
-.app__skills-item {
-  flex-direction: column;
-  text-align: center;
+.app__experiences-timeline-event {
+  position: relative;
+  list-style: none;
 
-  margin: 1rem;
-
-  transition: all 0.3s ease-in-out;
-
-  div {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background-color: #fff;
-
-    img {
-      width: 50%;
-      height: 50%;
+  &:hover {
+    .app__experiences-timeline-event-icon {
+      transform: rotate(-45deg);
+      background-color: var(--pink-color);
     }
 
-    &:hover {
-      box-shadow: 0 0 25px #fef4f5;
+    .app__experiences-timeline-event-thumbnail {
+      box-shadow: inset 40em 0 0 0 var(--pink-color);
     }
+  }
+}
 
-    @media screen and (min-width: 2000px) {
-      width: 150px;
-      height: 150px;
-    }
+.app__experiences-timeline-event-copy {
+  padding: 2em;
+  position: relative;
+  top: -1.875em;
+  left: 4em;
+  width: 80%;
+  color: var(--black-color);
 
-    @media screen and (max-width: 450px) {
-      width: 70px;
-      height: 70px;
-    }
+  h3 {
+    font-size: 1.75em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+    margin-bottom: 1.2em;
   }
 
   p {
-    font-weight: 500;
-    margin-top: 0.5rem;
-  }
-
-  @media screen and (min-width: 2000px) {
-    margin: 1rem 2rem;
-
-    p {
-      margin-top: 1rem;
-    }
+    white-space: pre-wrap;
   }
 }
 
-.app__skills-exp {
-  flex: 1;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
+.app__experiences-timeline-event-icon {
+  transform: rotate(45deg);
 
-  @media screen and (max-width: 900px) {
-    margin-top: 2rem;
-  }
+  background-color: var(--black-color);
+  outline: 10px solid white;
+  display: block;
+  margin: 0.5em 0.5em 0.5em -0.5em;
+  position: absolute;
+  top: 0;
+  left: 2em;
+  width: 1em;
+  height: 1em;
+  transition: transform 0.2s ease-in;
 }
 
-.app__skills-exp-item {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin: 1rem 0;
-}
+.app__experiences-timeline-event-thumbnail {
+  color: white;
+  font-size: 0.75em;
 
-.app__skills-exp-works {
-  flex: 1;
-
-  .app__skills-exp-work {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-bottom: 1rem;
-    cursor: pointer;
-
-    h4 {
-      font-weight: 500;
-    }
-
-    p {
-      font-weight: 400;
-      color: var(--gray-color);
-      margin-top: 5px;
-    }
-  }
-}
-
-.app__skills-exp-year {
-  margin-right: 3rem;
-
-  p {
-    font-weight: 800;
-    color: var(--secondary-color);
-  }
-
-  @media screen and (max-width: 450px) {
-    margin-right: 1rem;
-  }
-}
-
-.skills-tooltip {
-  max-width: 300px !important;
-  background-color: var(--white-color) !important;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1) !important;
-  border-radius: 5px !important;
-  padding: 1rem !important;
-  color: var(--gray-color) !important;
-  text-align: center !important;
-  line-height: 1.5 !important;
-  opacity: 1 !important;
-
-  @media screen and (min-width: 2000px) {
-    font-size: 1.75rem !important;
-    max-width: 500px !important;
-    line-height: 2 !important;
-  }
+  background-color: var(--black-color);
+  box-shadow: inset 0 0 0 0em var(--pink-color);
+  display: inline-block;
+  margin-bottom: 1.2em;
+  padding: 0.25em 1em 0.2em 1em;
+  transition: box-shadow 0.5s ease-in 0.1s;
 }
