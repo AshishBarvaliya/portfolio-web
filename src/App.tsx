@@ -1,9 +1,10 @@
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 import { Navbar } from "./components";
 import { Hero, Footer, Experiences, Projects } from "./containers";
 import "./App.scss";
 
 const TRACKING_ID = process.env.REACT_APP_TRACKING_ID;
+console.log(TRACKING_ID);
 ReactGA.initialize(TRACKING_ID || "");
 
 function App() {
