@@ -6,6 +6,7 @@ interface IButton {
   width?: "md" | "lg";
   target?: string;
   showMobileOnly?: boolean;
+  gaEventTracker: (action?: string, label?: string) => void;
 }
 
 const Button: React.FC<IButton> = ({
@@ -13,6 +14,7 @@ const Button: React.FC<IButton> = ({
   label,
   width = "md",
   showMobileOnly = false,
+  gaEventTracker,
   ...props
 }) => {
   return (
@@ -23,6 +25,7 @@ const Button: React.FC<IButton> = ({
         (showMobileOnly ? " button-mobile-only" : "")
       }
       href={link}
+      onClick={() => gaEventTracker(label)}
       {...props}
     >
       <span>{label}</span>

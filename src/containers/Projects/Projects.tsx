@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 import { urlFor, client } from "../../sanityClient";
 import "./Projects.scss";
+import useAnalyticsEventTracker from "../../hooks/useAnalyticsEventTracker";
 
 interface Project {
   title: string;
@@ -15,6 +16,7 @@ interface Project {
 }
 
 const Projects: React.FC = () => {
+  const gaEventTrackerP = useAnalyticsEventTracker("Projects");
   const [projects, setProjects] = useState<Project[]>([]);
 
   useEffect(() => {
@@ -51,7 +53,12 @@ const Projects: React.FC = () => {
                 }}
                 className="app__projects-hover app__flex"
               >
-                <a href={project.projectLink} target="_blank" rel="noreferrer">
+                <a
+                  href={project.projectLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={() => gaEventTrackerP(project.title + " - App link")}
+                >
                   <motion.div
                     whileInView={{ scale: [0, 1] }}
                     whileHover={{ scale: [1, 0.9] }}
@@ -61,7 +68,14 @@ const Projects: React.FC = () => {
                     <AiFillEye />
                   </motion.div>
                 </a>
-                <a href={project.codeLink} target="_blank" rel="noreferrer">
+                <a
+                  href={project.codeLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={() =>
+                    gaEventTrackerP(project.title + " - Github link")
+                  }
+                >
                   <motion.div
                     whileInView={{ scale: [0, 1] }}
                     whileHover={{ scale: [1, 0.9] }}

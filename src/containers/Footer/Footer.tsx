@@ -2,10 +2,12 @@ import { motion } from "framer-motion";
 import React from "react";
 import { Credits } from "../../components";
 import Button from "../../components/Button/Button";
+import useAnalyticsEventTracker from "../../hooks/useAnalyticsEventTracker";
 
 import "./Footer.scss";
 
 const Footer: React.FC = () => {
+  const gaEventTrackerC = useAnalyticsEventTracker("Contacts");
   const email = process.env.REACT_APP_CONTACT_EMAIL;
 
   return (
@@ -27,7 +29,12 @@ const Footer: React.FC = () => {
               candidate. You can count on me to be available at all times.
             </p>
             <div className="app_footer-button-wrapper">
-              <Button label="Say Hello" link={`mailto:${email}`} width="lg" />
+              <Button
+                label="Say Hello"
+                link={`mailto:${email}`}
+                gaEventTracker={gaEventTrackerC}
+                width="lg"
+              />
             </div>
           </div>
         </motion.div>
