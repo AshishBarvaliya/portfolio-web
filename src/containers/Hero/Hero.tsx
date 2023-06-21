@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
               pursuing post-graduation studies in full-stack software
               development. Additionally, working as a senior software developer
               for freelance projects on a part-time basis, I also contribute to
-              open source projects for platforms like{" "}
+              open source projects for platforms like
               <a
                 href="https://github.com/parse-community/parse-dashboard"
                 target="_blank"
@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
               >
                 Motion Canvas
               </a>
-              , among others.
+              among others.
             </p>
           </div>
         </div>
