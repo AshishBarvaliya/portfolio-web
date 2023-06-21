@@ -124,15 +124,19 @@
   display: flex;
   color: var(--black-color);
   opacity: 0.6;
+  height: 118px;
 
   @media screen and (max-width: 1024px) {
+    height: 98px;
     font-size: 50px;
   }
   @media screen and (max-width: 768px) {
+    height: 82px;
     font-size: 40px;
   }
   @media screen and (max-width: 450px) {
     margin-top: 10px;
+    height: 62px;
     font-size: 25px;
   }
 }
@@ -169,4 +173,11 @@
   @media screen and (max-width: 450px) {
     display: flex;
   }
+}
+
+.app_hero-desc-link {
+  margin-left: 4px;
+  margin-right: 4px;
+  color: var(--blue-color);
+  text-decoration: none;
 }

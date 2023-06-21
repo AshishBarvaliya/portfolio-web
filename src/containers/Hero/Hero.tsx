@@ -11,6 +11,7 @@ const email = process.env.REACT_APP_CONTACT_EMAIL;
 const Hero: React.FC = () => {
   const gaEventTrackerSM = useAnalyticsEventTracker("Social Media");
   const gaEventTrackerC = useAnalyticsEventTracker("Contacts");
+  const gaEventTrackerOSC = useAnalyticsEventTracker("Open Source");
 
   return (
     <div id="home" className="app__hero app__flex">
@@ -24,14 +25,35 @@ const Hero: React.FC = () => {
             <p className="app__hero-head-text-small">Hello, my name is</p>
             <h1 className="app__hero-head-text">Ashish Baravaliya,</h1>
             <p className="app__hero-subhead-text">
-              A <AnimatedText />
+              <AnimatedText />
             </p>
             <p className="app__hero-head-text-small">
               I'm an experienced front-end developer with over 3 years of work
               experience in a multinational corporation in India, currently
               pursuing post-graduation studies in full-stack software
               development. Additionally, working as a senior software developer
-              for freelance projects on a part-time basis.
+              for freelance projects on a part-time basis, I also contribute to
+              open source projects for platforms like{" "}
+              <a
+                href="https://github.com/parse-community/parse-dashboard"
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => gaEventTrackerOSC("Parse Dashboard")}
+                className="app_hero-desc-link"
+              >
+                Parse Community
+              </a>
+              and
+              <a
+                href="https://github.com/motion-canvas/motion-canvas"
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => gaEventTrackerOSC("Motion Canvas")}
+                className="app_hero-desc-link"
+              >
+                Motion Canvas
+              </a>
+              , among others.
             </p>
           </div>
         </div>
