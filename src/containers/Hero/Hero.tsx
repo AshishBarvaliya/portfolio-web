@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
               <AnimatedText />
             </p>
             <p className="app__hero-head-text-small">
-              I'm an experienced front-end developer with over 3 years of work
+              I'm an experienced software developer with over 4 years of work
               experience in a multinational corporation in India, currently
               pursuing post-graduation studies in full-stack software
               development. Additionally, working as a senior software developer
@@ -45,13 +45,13 @@ const Hero: React.FC = () => {
               </a>
               and
               <a
-                href="https://github.com/motion-canvas/motion-canvas"
+                href="https://github.com/directus/directus"
                 target="_blank"
                 rel="noreferrer"
-                onClick={() => gaEventTrackerOSC("Motion Canvas")}
+                onClick={() => gaEventTrackerOSC("Directus")}
                 className="app_hero-desc-link"
               >
-                Motion Canvas
+                Directus
               </a>
               among others.
             </p>
