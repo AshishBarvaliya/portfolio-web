@@ -3,8 +3,7 @@ import "./AnimatedText.scss";
 
 const AnimatedText: React.FC = () => {
   const content = [
-    "A Frontend Developer",
-    "A Full Stack Dev Student",
+    "A Full Stack Developer",
     "A Freelancer",
     "An Open Source Contributor",
   ];
