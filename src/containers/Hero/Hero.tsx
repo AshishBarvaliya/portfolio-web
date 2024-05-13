@@ -28,12 +28,12 @@ const Hero: React.FC = () => {
               <AnimatedText />
             </p>
             <p className="app__hero-head-text-small">
-              I'm an experienced software developer with over 4 years of work
-              experience in a multinational corporation in India, currently
-              pursuing post-graduation studies in full-stack software
-              development. Additionally, working as a senior software developer
+              I am an experienced frontend developer with over 3 years of work
+              experience in a multinational corporation in India, just completed
+              my post-graduation studies in full-stack software development from
+              Lambton College. Additionally, working as a full-stack developer
               for freelance projects on a part-time basis, I also contribute to
-              open source projects for platforms like
+              open-source projects for platforms like
               <a
                 href="https://github.com/parse-community/parse-dashboard"
                 target="_blank"
