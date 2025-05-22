@@ -28,12 +28,14 @@ const Hero: React.FC = () => {
               <AnimatedText />
             </p>
             <p className="app__hero-head-text-small">
-              I am an experienced frontend developer with over 3 years of work
-              experience in a multinational corporation in India, just completed
-              my post-graduation studies in full-stack software development from
-              Lambton College. Additionally, working as a full-stack developer
-              for freelance projects on a part-time basis, I also contribute to
-              open-source projects for platforms like
+              I am a Frontend Developer with 5+ years of experience, including 3
+              years in multinational corporations (MNCs) and 2+ years
+              freelancing on full-stack projects. Specializes in clean UI/UX,
+              responsive design, and high-performance web applications.
+              Proficient in TypeScript, React, and Python, with a
+              problem-solving mindset and a proven track record of delivering
+              user-friendly solutions. Holds a Master’s degree from a Canadian
+              institution and actively contributes to open-source projects like
               <a
                 href="https://github.com/parse-community/parse-dashboard"
                 target="_blank"
