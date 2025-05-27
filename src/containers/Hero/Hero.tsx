@@ -11,7 +11,6 @@ const email = process.env.REACT_APP_CONTACT_EMAIL;
 const Hero: React.FC = () => {
   const gaEventTrackerSM = useAnalyticsEventTracker("Social Media");
   const gaEventTrackerC = useAnalyticsEventTracker("Contacts");
-  const gaEventTrackerOSC = useAnalyticsEventTracker("Open Source");
 
   return (
     <div id="home" className="app__hero app__flex">
@@ -28,34 +27,16 @@ const Hero: React.FC = () => {
               <AnimatedText />
             </p>
             <p className="app__hero-head-text-small">
-              I am a Frontend Developer with 5+ years of experience, including 3
-              years in multinational corporations (MNCs) and 2+ years
-              freelancing on full-stack projects. Specializes in clean UI/UX,
-              responsive design, and high-performance web applications.
-              Proficient in TypeScript, React, and Python, with a
-              problem-solving mindset and a proven track record of delivering
-              user-friendly solutions. Holds a Master’s degree from a Canadian
-              institution and actively contributes to open-source projects like
-              <a
-                href="https://github.com/parse-community/parse-dashboard"
-                target="_blank"
-                rel="noreferrer"
-                onClick={() => gaEventTrackerOSC("Parse Dashboard")}
-                className="app_hero-desc-link"
-              >
-                Parse Community
-              </a>
-              and
-              <a
-                href="https://github.com/directus/directus"
-                target="_blank"
-                rel="noreferrer"
-                onClick={() => gaEventTrackerOSC("Directus")}
-                className="app_hero-desc-link"
-              >
-                Directus
-              </a>
-              among others.
+              I am a Product-focused and results-driven Senior Frontend Engineer
+              with over 5 years of experience architecting and delivering
+              scalable, performant web applications. Proven expertise in leading
+              UI development, establishing robust design systems, and shipping
+              high-quality, production-ready code. Adept at navigating both
+              enterprise and fast-paced startup environments, with a strong
+              commitment to balancing technical excellence with business
+              objectives. Actively contributed to open-source projects (Parse,
+              Directus) and seamlessly managed real-world software delivery
+              alongside postgraduate studies.
             </p>
           </div>
         </div>
