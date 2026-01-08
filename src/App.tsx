@@ -1,21 +1,12 @@
-import ReactGA from "react-ga4";
-import { Navbar } from "./components";
-import { Hero, Footer, Experiences, Projects } from "./containers";
 import "./App.scss";
-
-const TRACKING_ID = process.env.REACT_APP_TRACKING_ID;
-console.log(TRACKING_ID);
-ReactGA.initialize(TRACKING_ID || "");
 
 function App() {
   return (
     <div className="app">
-      <Navbar />
-      <Hero />
-      <Experiences />
-      <Projects />
-      {/* <Skills /> */}
-      <Footer />
+      <div className="app__maintenance">
+        <h1>🚧 Site Under Maintenance 🚧</h1>
+        <p>We're working on some improvements. Please check back soon!</p>
+      </div>
     </div>
   );
 }
